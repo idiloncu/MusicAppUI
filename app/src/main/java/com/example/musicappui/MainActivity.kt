@@ -27,7 +27,7 @@ class MainActivity : ComponentActivity() {
                 }
 
                 window.statusBarColor = android.graphics.Color.TRANSPARENT
-                window.navigationBarDividerColor=android.graphics.Color.BLACK
+                window.navigationBarDividerColor=android.graphics.Color.TRANSPARENT
                 window.navigationBarColor=android.graphics.Color.BLACK
                 Surface(
                     modifier = Modifier.fillMaxSize(),

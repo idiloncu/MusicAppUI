@@ -29,7 +29,7 @@ fun Home() {
     LazyColumn {
         grouped.forEach {
             stickyHeader {
-                Text(text = it.value[0], modifier = Modifier.padding(16.dp))
+                Text(text = it.value[0], modifier = Modifier.padding(16.dp), color = Color.DarkGray)
                 LazyRow {
                     items(categories) { cat ->
                         BrowserItem(cat = cat, drawable = R.drawable.baseline_apps_24)

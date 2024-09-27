@@ -44,7 +44,7 @@ fun BrowserScreenItem(cat: String, drawable: Int) {
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            Text(text = cat)
+            Text(text = cat,color = Color.DarkGray)
             Image(painter = painterResource(id = drawable), contentDescription = cat)
         }
     }

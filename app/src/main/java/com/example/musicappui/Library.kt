@@ -15,6 +15,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 
@@ -39,10 +40,15 @@ fun LibItem(lib: Lib) {
             Row {
                 Icon(painter = painterResource(id = lib.icon),
                     modifier = Modifier.padding(horizontal = 8.dp),
-                    contentDescription = lib.name)
-                Text(text = lib.name)
+                    contentDescription = lib.name,
+                    tint = colorResource(id = R.color.black)
+
+                )
+                Text(text = lib.name, color = Color.DarkGray)
             }
-            Icon(imageVector = Icons.Default.KeyboardArrowRight, contentDescription ="Arrow Right")
+            Icon(imageVector = Icons.Default.KeyboardArrowRight, contentDescription ="Arrow Right",
+                tint = colorResource(id = R.color.black)
+            )
         }
         Divider(color = Color.LightGray)
     }
